@@ -43,13 +43,10 @@ public class ShoppingCartTest {
     }
 
     MockShoppingCart sc;
-    ByteArrayOutputStream myOut;
-
+    
     @Before
     public void setup() {
         sc = new MockShoppingCart(new Pricer());
-        myOut = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(myOut));
     }    
 
     @Test
